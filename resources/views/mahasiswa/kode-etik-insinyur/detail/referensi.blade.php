@@ -208,12 +208,12 @@
             <label for="nama" class="form-label">Nama</label>
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="nama"
               name="nama"
               placeholder="Nama"
               value="Mina rofida"
-              disabled
+
             />
           </div>
           {{-- II.1 KOLOM C --}}
@@ -222,13 +222,13 @@
               >Alamat</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="alamat"
               name="alamat"
               placeholder="Alamat"
               value="Jl. Pandega Siwi Blok B No.96A"
-              disabled
+
             />
           </div>
           {{-- II.1 KOLOM D --}}
@@ -238,12 +238,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="no-telp"
               name="no-telp"
               placeholder="No. Telepon"
               value="081234567890"
-              disabled
+
             />
           </div>
           {{-- II.1 KOLOM E --}}
@@ -251,12 +251,12 @@
             <label for="email" class="form-label">Email</label>
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="email"
               name="email"
               placeholder="Email"
               value="minarofida@gmail.com"
-              disabled
+
             />
           </div>
           {{-- II.1 KOLOM F --}}
@@ -266,12 +266,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="hubungan"
               name="hubungan"
               placeholder="Hubungan"
               value="minarofida@gmail.com"
-              disabled
+
             />
           </div>
         </div>
@@ -697,6 +697,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/kode-etik-insinyur/referensi"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/kode-etik-insinyur/referensi"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

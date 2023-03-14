@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
             {{-- III KOLOM B --}}
             <div class="mb-3 col-md-6">
                 <label for="periode" class="form-label"
@@ -210,12 +220,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="periode"
                   name="periode"
                   placeholder="Periode"
                   value=""
-                  disabled
+
                 />
               </div>
           {{-- III KOLOM C --}}
@@ -224,13 +234,13 @@
               >Nama Instansi/ Perusahaan</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nama-instansi"
               name="nama-instansi"
               placeholder="Nama Instansi/ Perusahaan"
               value="Universitas Sriwijaya"
-              disabled
+
             />
           </div>
           {{-- III KOLOM D --}}
@@ -240,12 +250,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="jabatan"
               name="jabatan"
               placeholder="Jabatan/ Tugas"
               value="Dosen"
-              disabled
+
             />
           </div>
           {{-- III KOLOM E --}}
@@ -255,12 +265,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="nama-aktifitas"
               name="nama-aktifitas"
               placeholder="Nama Aktifitas/ Kegiatan/ Proyek"
               value="Kegiatan Jurusan"
-              disabled
+
             />
           </div>
           {{-- III KOLOM F --}}
@@ -270,12 +280,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="pemberi-tugas"
               name="pemberi-tugas"
               placeholder="Pemberi Tugas"
               value="Ketua Jurusan"
-              disabled
+
             />
           </div>
           {{-- III KOLOM G --}}
@@ -285,12 +295,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="lokasi"
               name="lokasi"
               placeholder="Lokasi"
               value="Palembang"
-              disabled
+
             />
           </div>
           {{-- III KOLOM H --}}
@@ -300,8 +310,8 @@
             >
             <select
               id="durasi"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Durasi</option>
               <option value="1-3" selected>1 - 3 Tahun</option>
@@ -318,8 +328,8 @@
             >
             <select
               id="posisi"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Posisi Tugas, Jabatan
@@ -346,12 +356,12 @@
             >
             <input
               type="number"
-              class="form-control bg-white"
+              class="form-control"
               id="nilai-proyek"
               name="nilai-proyek"
               placeholder="Nilai Proyek"
               value="10000000"
-              disabled
+
             />
           </div>
           {{-- III KOLOM K --}}
@@ -361,12 +371,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="nilai-tanggung-jawab"
               name="nilai-tanggung-jawab"
               placeholder="Nilai Tanggung Jawab"
               value=""
-              disabled
+
             />
           </div>
           {{-- III KOLOM L --}}
@@ -376,8 +386,8 @@
             >
             <select
               id="sdm"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih SDM yang Terlibat</option>
               <option value="sedikit" selected>Sedikit</option>
@@ -395,8 +405,8 @@
             >
             <select
               id="tingkat"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Tingkat Kesulitan</option>
               <option value="rendah" selected>Rendah</option>
@@ -414,8 +424,8 @@
             >
             <select
               id="skala"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Skala Proyek</option>
               <option value="rendah" selected>Rendah</option>
@@ -435,9 +445,9 @@
             <textarea
               name="uraian"
               id="uraian"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Uraian Singkat Tugas dan Tanggung Jawab Profesional Sesuai NSPK" rows="5"
-              disabled
+
             ></textarea>
           </div>
         </div>
@@ -4309,6 +4319,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/kualifikasi-profesional"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/kualifikasi-profesional"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

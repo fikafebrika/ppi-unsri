@@ -230,12 +230,12 @@
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Konversi</strong></td>
+            <td><strong>Nilai</strong></td>
             <td class="fw-bold">0</td>
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Mutu</strong></td>
+            <td><strong>Predikat</strong></td>
             <td class="fw-bold">F</td>
           </tr>
         </tfoot>
@@ -322,12 +322,12 @@
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Konversi</strong></td>
+            <td><strong>Nilai</strong></td>
             <td class="fw-bold">0</td>
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Mutu</strong></td>
+            <td><strong>Predikat</strong></td>
             <td class="fw-bold">F</td>
           </tr>
         </tfoot>
@@ -368,12 +368,12 @@
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Konversi</strong></td>
+            <td><strong>Nilai</strong></td>
             <td class="fw-bold">0</td>
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Mutu</strong></td>
+            <td><strong>Predikat</strong></td>
             <td class="fw-bold">F</td>
           </tr>
         </tfoot>
@@ -458,12 +458,12 @@
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Konversi</strong></td>
+            <td><strong>Nilai</strong></td>
             <td class="fw-bold">0</td>
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Mutu</strong></td>
+            <td><strong>Predikat</strong></td>
             <td class="fw-bold">F</td>
           </tr>
         </tfoot>
@@ -540,12 +540,12 @@
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Konversi</strong></td>
+            <td><strong>Nilai</strong></td>
             <td class="fw-bold">0</td>
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Mutu</strong></td>
+            <td><strong>Predikat</strong></td>
             <td class="fw-bold">F</td>
           </tr>
         </tfoot>
@@ -626,12 +626,12 @@
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Konversi</strong></td>
+            <td><strong>Nilai</strong></td>
             <td class="fw-bold">0</td>
           </tr>
           <tr>
             <td colspan="2"></td>
-            <td><strong>Nilai Mutu</strong></td>
+            <td><strong>Predikat</strong></td>
             <td class="fw-bold">F</td>
           </tr>
         </tfoot>

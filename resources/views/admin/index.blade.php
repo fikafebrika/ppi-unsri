@@ -6,17 +6,17 @@
 
 @section('sidebar')
 <li class="menu-item active">
-    <a href="#" class="menu-link">
+    <a href="/admin/beranda" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Beranda">Beranda</div>
     </a>
 </li>
-{{-- <li class="menu-item">
-    <a href="/prodi/akun" class="menu-link">
+<li class="menu-item">
+    <a href="/admin/verifikator" class="menu-link">
         <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="Akun">Akun</div>
+        <div data-i18n="Daftar Verifikator">Daftar Verifikator</div>
     </a>
-</li> --}}
+</li>
 <li class="menu-item">
     <a href="/admin/login" class="menu-link">
         <i class="menu-icon tf-icons bx bx-power-off"></i>
@@ -41,11 +41,18 @@
                   Segera Tentukan Dosen Verifikator Masing-Masing
                   Mahasiswa.
                 </p>
-                <a
-                  href="#daftarMahasiswa"
-                  class="btn btn-outline-primary"
-                  >Daftar Mahasiswa</a
-                >
+                <div class="d-flex">
+                    <a
+                    href="#daftarMahasiswa"
+                    class="btn btn-outline-primary me-2"
+                    >Daftar Mahasiswa</a
+                  >
+                    <a
+                    href="/admin/verifikator"
+                    class="btn btn-outline-primary"
+                    >Daftar Verifikator</a
+                  >
+                </div>
               </div>
             </div>
             <div class="col-sm-4 text-center text-sm-left">
@@ -77,7 +84,7 @@
                     <th class="text-lg-start">Mahasiswa</th>
                     <th>Kejurusan</th>
                     <th>Profesi</th>
-                    <th>Verifikator</th>
+                    <th>Pilih Verifikator</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -97,16 +104,22 @@
                     <td>
                       <select
                         id="jenis-organisasi"
-                        class="select2 form-select"
+                        class="select2 form-select" multiple
                       >
-                        <option value="" selected>
-                          Pilih Verifikator
-                        </option>
                         <option value="verifikator-satu">
                           Verifikator Satu
                         </option>
                         <option value="verifikator-dua">
                           Verifikator Dua
+                        </option>
+                        <option value="verifikator-tiga">
+                          Verifikator Tiga
+                        </option>
+                        <option value="verifikator-empat">
+                          Verifikator Empat
+                        </option>
+                        <option value="verifikator-lima">
+                          Verifikator Lima
                         </option>
                       </select>
                     </td>
@@ -127,16 +140,22 @@
                     <td>
                       <select
                         id="jenis-organisasi"
-                        class="select2 form-select"
+                        class="select2 form-select" multiple
                       >
-                        <option value="" selected>
-                          Pilih Verifikator
-                        </option>
                         <option value="verifikator-satu">
                           Verifikator Satu
                         </option>
                         <option value="verifikator-dua">
                           Verifikator Dua
+                        </option>
+                        <option value="verifikator-tiga">
+                          Verifikator Tiga
+                        </option>
+                        <option value="verifikator-empat">
+                          Verifikator Empat
+                        </option>
+                        <option value="verifikator-lima">
+                          Verifikator Lima
                         </option>
                       </select>
                     </td>

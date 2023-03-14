@@ -22,9 +22,20 @@ Route::prefix('/admin')->group(function () {
         return view('admin.index');
     });
 
-    // Route::get('/akun', function () {
-    //     return view('admin.akun');
-    // });
+    Route::prefix('/verifikator')->group(function () {
+        Route::get('/', function () {
+            return view('admin.verifikator.index');
+        });
+
+        Route::get('/tambah', function () {
+            return view('admin.verifikator.tambah');
+        });
+
+        Route::get('/edit', function () {
+            return view('admin.verifikator.edit');
+        });
+
+    });
 
 });
 

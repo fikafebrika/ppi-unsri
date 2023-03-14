@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
           {{-- I.2 C2 (Untuk S1) --}}
           {{-- I.2 D2 (Untuk S2) --}}
           {{-- I.2 E2 (Untuk S3) --}}
@@ -210,7 +220,7 @@
             <label class="form-label" for="jenjang"
               >Jenjang</label
             >
-            <select id="jenjang" class="select2 form-select bg-white" disabled>
+            <select id="jenjang" class="select2 form-select">
                 <option value="">Pilih Jenjang</option>
                 <option value="s1" selected>S1</option>
                 <option value="s2">S2</option>
@@ -228,12 +238,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="nama-perguruan-tinggi"
               name="nama-perguruan-tinggi"
               placeholder="Nama Perguruan Tinggi"
               value="Universitas Sriwijaya"
-              disabled
+
             />
           </div>
           {{-- I.2 C4 (Untuk S1) --}}
@@ -244,13 +254,13 @@
               >Fakultas</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="fakultas"
               name="fakultas"
               placeholder="Fakultas"
               value="Ilmu Komputer"
-              disabled
+
             />
           </div>
           {{-- I.2 C5 (Untuk S1) --}}
@@ -262,12 +272,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="jurusan"
               name="jurusan"
               placeholder="Jurusan"
               value="Sistem Informasi"
-              disabled
+
             />
           </div>
           {{-- I.2 C6 (Untuk S1) --}}
@@ -279,12 +289,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="kota"
               name="kota"
               placeholder="Kota"
               value="Palembang"
-              disabled
+
             />
           </div>
           {{-- I.2 C7 (Untuk S1) --}}
@@ -296,12 +306,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="negara"
               name="negara"
               placeholder="Negara"
               value="Indonesia"
-              disabled
+
             />
           </div>
           {{-- I.2 C8 (Untuk S1) --}}
@@ -313,12 +323,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="tahun"
               name="tahun"
               placeholder="Tahun Lulus"
               value="2022"
-              disabled
+
             />
           </div>
           {{-- I.2 C9 (Untuk S1) --}}
@@ -328,12 +338,12 @@
             <label for="gelar" class="form-label">Gelar</label>
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="gelar"
               name="gelar"
               placeholder="Gelar"
               value="S.Kom."
-              disabled
+
             />
           </div>
           {{-- I.2 C10 (Untuk S1) --}}
@@ -347,11 +357,10 @@
             <textarea
               name="judul-ta"
               id="judul-ta"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Judul Tugas Akhir/ Skripsi/ Tesis/ Disertasi"
-              disabled
-            >
-Perancangan UI/UX Sistem Kapustakan Kraton</textarea
+
+            >Perancangan UI/UX Sistem Kapustakan Kraton</textarea
             >
           </div>
           {{-- I.2 C11 (Untuk S1) --}}
@@ -365,11 +374,10 @@ Perancangan UI/UX Sistem Kapustakan Kraton</textarea
             <textarea rows="5"
               name="uraian-ta"
               id="uraian-ta"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Uraian Singkat Tentang Materi Tugas Akhir/ Skripsi/ Tesis/ Disertasi"
-              disabled
-            >
-Melakukan perancangan desain Sistem Kapustakan Kraton dalam bentuk Prototype</textarea
+
+            >Melakukan perancangan desain Sistem Kapustakan Kraton dalam bentuk Prototype</textarea
             >
           </div>
           {{-- I.2 C12 (Untuk S1) --}}
@@ -381,12 +389,12 @@ Melakukan perancangan desain Sistem Kapustakan Kraton dalam bentuk Prototype</te
             >
             <input
               type="number"
-              class="form-control bg-white"
+              class="form-control"
               id="nilai"
               name="nilai"
               placeholder="Nilai Akademik Rata-rata"
               value="3.95"
-              disabled
+
             />
           </div>
           {{-- I.2 C13 (Untuk S1) --}}
@@ -398,12 +406,12 @@ Melakukan perancangan desain Sistem Kapustakan Kraton dalam bentuk Prototype</te
             >
             <input
               type="date"
-              class="form-control bg-white"
+              class="form-control"
               id="judicium"
               name="judicium"
               placeholder="Judicium"
               value=""
-              disabled
+
             />
           </div>
         </div>
@@ -898,6 +906,28 @@ Melakukan perancangan desain Sistem Kapustakan Kraton dalam bentuk Prototype</te
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/data-pribadi/pendidikan-formal"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/data-pribadi/pendidikan-formal"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

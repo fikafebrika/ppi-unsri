@@ -371,6 +371,14 @@
               disabled
             ></textarea>
           </div>
+          <div class="mb-3">
+            <label for="bukti" class="form-label"
+              >Bukti Pencapaian</label
+            >
+            <div>
+                <a href="#" class="btn btn-outline-primary">Download File</a>
+            </div>
+          </div>
         </div>
       </div>
       {{-- <hr class="my-0" />

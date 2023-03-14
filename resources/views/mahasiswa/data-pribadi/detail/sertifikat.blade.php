@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
             {{-- I.6 Kolom B --}}
             <div class="mb-3">
                 <label for="nama-pendidikan" class="form-label"
@@ -210,12 +220,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="nama-pendidikan"
                   name="nama-pendidikan"
                   placeholder="Nama Pendidikan/ Pelatihan"
                   value="Pemrograman Web"
-                  disabled
+
                 />
               </div>
               {{-- I.6 Kolom C --}}
@@ -224,13 +234,13 @@
                   >Penyelenggara</label
                 >
                 <input
-                  class="form-control bg-white"
+                  class="form-control"
                   type="text"
                   id="penyelenggara"
                   name="penyelenggara"
                   placeholder="Penyelenggara"
                   value="Universitas Sriwijaya"
-                  disabled
+
                 />
               </div>
               {{-- I.6 Kolom D --}}
@@ -240,12 +250,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="lokasi"
                   name="lokasi"
                   placeholder="Lokasi"
                   value="Palembang"
-                  disabled
+
                 />
               </div>
               {{-- I.6 Kolom E --}}
@@ -255,12 +265,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="negara"
                   name="negara"
                   placeholder="Negara"
                   value="Indonesia"
-                  disabled
+
                 />
               </div>
               {{-- I.6 Kolom F --}}
@@ -270,11 +280,11 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="bulan-tahun"
                   name="bulan-tahun"
                   placeholder="Bulan / Tahun"
-                  disabled
+
                 />
               </div>
           {{-- I.6 Kolom G --}}
@@ -284,8 +294,8 @@
             >
             <select
               id="tingkat"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Tingkatan Materi
@@ -305,8 +315,8 @@
             >
             <select
               id="jumlah-jam"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Jumlah Jam
@@ -333,9 +343,9 @@
             <textarea
               name="uraian"
               id="uraian"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Uraian Singkat Materi Pendidikan/ Pelatihan, Tingkat Pendidikan, Sertifikat"
-              disabled rows="5"
+               rows="5"
             ></textarea>
           </div>
         </div>
@@ -1721,6 +1731,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/data-pribadi/sertifikat"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/data-pribadi/sertifikat"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

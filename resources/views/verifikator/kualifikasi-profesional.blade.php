@@ -140,7 +140,9 @@
             <th>Nama Instansi/ Perusahaan</th>
             <th>Jabatan/ Tugas</th>
             <th>Nama Aktifitas/ Kegiatan/ Proyek</th>
+            <th>Bukti</th>
             <th>Status</th>
+            <th>Verifikator</th>
             <th>Aksi</th>
           </tr>
         </thead>
@@ -155,24 +157,36 @@
             <td>Dosen</td>
             {{-- III KOLOM E --}}
             <td>Kegiatan Jurusan</td>
+
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
+
             {{-- Status Data FAIP, Kalo belum diverifikasi atau divalidasi, statusnyo masih "Pending" --}}
             <td>
-              <span class="badge bg-label-warning me-1"
-                >Pending</span
-              >
-            </td>
-            {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator dan hasilnyo valid, statusnyo jadi "Valid" --}}
-            {{-- <td>
-              <span class="badge bg-label-success me-1"
-                >Valid</span
-              >
-            </td> --}}
-            {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator dan hasil datanyo tidak valid, statusnyo jadi "Invalid" --}}
-            {{-- <td>
-              <span class="badge bg-label-danger me-1"
-                >Invalid</span
-              >
-            </td> --}}
+                <span class="badge bg-label-warning me-1"
+                  >Pending</span
+                >
+              </td>
+              {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator terakhir dan hasilnyo valid, statusnyo jadi "Valid" --}}
+              {{-- <td>
+                <span class="badge bg-label-success me-1"
+                  >Valid</span
+                >
+              </td> --}}
+              {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator terakhir dan hasil datanyo tidak valid, statusnyo jadi "Invalid" --}}
+              {{-- <td>
+                <span class="badge bg-label-danger me-1"
+                  >Invalid</span
+                >
+              </td> --}}
+
+            {{-- Kalo belum ada verifikator yang meriksa, kosongin be --}}
+            <td></td>
+            {{-- Kalo ada, tampilin verifikator terakhir yg meriksa --}}
+            {{-- <td>Verifikator Satu</td> --}}
+
             <td>
               <a
                 href="/verifikator/kualifikasi-profesional/periksa"
@@ -191,24 +205,36 @@
             <td>Dosen</td>
             {{-- III KOLOM E --}}
             <td>Kegiatan Jurusan</td>
+
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
+
             {{-- Status Data FAIP, Kalo belum diverifikasi atau divalidasi, statusnyo masih "Pending" --}}
             <td>
-              <span class="badge bg-label-warning me-1"
-                >Pending</span
-              >
-            </td>
-            {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator dan hasilnyo valid, statusnyo jadi "Valid" --}}
-            {{-- <td>
-              <span class="badge bg-label-success me-1"
-                >Valid</span
-              >
-            </td> --}}
-            {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator dan hasil datanyo tidak valid, statusnyo jadi "Invalid" --}}
-            {{-- <td>
-              <span class="badge bg-label-danger me-1"
-                >Invalid</span
-              >
-            </td> --}}
+                <span class="badge bg-label-warning me-1"
+                  >Pending</span
+                >
+              </td>
+              {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator terakhir dan hasilnyo valid, statusnyo jadi "Valid" --}}
+              {{-- <td>
+                <span class="badge bg-label-success me-1"
+                  >Valid</span
+                >
+              </td> --}}
+              {{-- Status Data FAIP, Kalo dah diverifikasi oleh verifikator terakhir dan hasil datanyo tidak valid, statusnyo jadi "Invalid" --}}
+              {{-- <td>
+                <span class="badge bg-label-danger me-1"
+                  >Invalid</span
+                >
+              </td> --}}
+
+            {{-- Kalo belum ada verifikator yang meriksa, kosongin be --}}
+            <td></td>
+            {{-- Kalo ada, tampilin verifikator terakhir yg meriksa --}}
+            {{-- <td>Verifikator Satu</td> --}}
+
             <td>
               <a
                 href="/verifikator/kualifikasi-profesional/periksa"

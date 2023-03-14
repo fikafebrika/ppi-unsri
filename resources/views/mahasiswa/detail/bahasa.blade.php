@@ -203,19 +203,29 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
           {{-- VI KOLOM B --}}
             <div class="mb-3 col-md-6">
             <label for="nama-bahasa" class="form-label"
               >Nama Bahasa</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nama-bahasa"
               name="nama-bahasa"
               placeholder="Nama Bahasa"
               value="Bahasa Indonesia"
-              disabled
+
             />
           </div>
           {{-- VI KOLOM C --}}
@@ -225,8 +235,8 @@
             >
             <select
               id="jenis-bahasa"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Jenis Bahasa</option>
               <option value="daerah">Bahasa Daerah</option>
@@ -245,8 +255,8 @@
             >
             <select
               id="kemampuan"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Kemampuan Verbal Aktif/ Pasif</option>
               <option value="pasif" selected>
@@ -263,13 +273,13 @@
               >Jenis Tulisan yang Mampu Disusun</label
             >
             <input
-            class="form-control bg-white"
+            class="form-control"
             type="text"
             id="jenis-tulisan"
             name="jenis-tulisan"
             placeholder="Jenis Tulisan yang Mampu Disusun"
             value="Makalah"
-            disabled
+
           />
           </div>
           {{-- VI KOLOM F --}}
@@ -278,13 +288,13 @@
               >Nilai Toefl atau yang Sejenisnya</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nilai"
               name="nilai"
               placeholder="Nilai Toefl atau yang Sejenisnya"
               value="450"
-              disabled
+
             />
           </div>
         </div>
@@ -776,6 +786,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/bahasa"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/bahasa"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
           {{-- IV KOLOM B --}}
             <div class="mb-3 col-md-6">
             <label
@@ -211,13 +221,13 @@
               >Nama Perguruan Tinggi/ Lembaga</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nama-perguruan-tinggi"
               name="nama-perguruan-tinggi"
               placeholder="Nama Perguruan Tinggi/ Lembaga"
               value="Universitas Sriwijaya"
-              disabled
+
             />
           </div>
           {{-- IV KOLOM C --}}
@@ -228,9 +238,9 @@
             <textarea
             name="nama-mata-ajaran"
             id="nama-mata-ajaran"
-            class="form-control bg-white"
+            class="form-control"
             placeholder="Nama Mata Ajaran & Uraian Singkat yang Diajarkan/ Dikembangkan"
-            disabled rows="5"
+             rows="5"
           ></textarea>
           </div>
           {{-- IV KOLOM D --}}
@@ -240,12 +250,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="lokasi"
               name="lokasi"
               placeholder="Lokasi"
               value="Palembang"
-              disabled
+
             />
           </div>
           {{-- IV KOLOM E --}}
@@ -255,8 +265,8 @@
             >
             <select
               id="periode"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Periode</option>
               <option value="1-9" selected>1 - 9 Tahun</option>
@@ -272,8 +282,8 @@
             >
             <select
               id="jabatan"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Jabatan pada Perguruan Tinggi/ Lembaga
@@ -291,8 +301,8 @@
             >
             <select
               id="sks"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">Pilih Jumlah Jam/ SKS</option>
               <option value="1-sks" selected>
@@ -313,9 +323,9 @@
             <textarea
               name="uraian"
               id="uraian"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Nama Mata Ajaran atau Uraian Singkat yang Diajarkan/ Dikembangkan" rows="5"
-              disabled
+
             ></textarea>
           </div>
         </div>
@@ -1914,6 +1924,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/pengalaman-mengajar"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/pengalaman-mengajar"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

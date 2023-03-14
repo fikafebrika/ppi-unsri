@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
           {{-- V.1 KOLOM B --}}
             <div class="mb-3 col-md-6">
             <label for="bulan-tahun" class="form-label"
@@ -210,12 +220,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="bulan-tahun"
               name="bulan-tahun"
               placeholder="Bulan - Tahun"
               value=""
-              disabled
+
             />
           </div>
           {{-- V.1 KOLOM C --}}
@@ -224,13 +234,13 @@
               >Judul Karya Tulis</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="judul"
               name="judul"
               placeholder="Judul Karya Tulis"
               value="Karya Tulis Satu"
-              disabled
+
             />
           </div>
           {{-- V.1 KOLOM D --}}
@@ -239,13 +249,13 @@
               >Nama Media Publikasi</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nama-media"
               name="nama-media"
               placeholder="Nama Media Publikasi"
               value="Kompas"
-              disabled
+
             />
           </div>
           {{-- V.1 KOLOM E --}}
@@ -255,12 +265,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="lokasi"
               name="lokasi"
               placeholder="Lokasi"
               value="Palembang"
-              disabled
+
             />
           </div>
           {{-- V.1 KOLOM F --}}
@@ -270,8 +280,8 @@
             >
             <select
               id="tingkatan-media"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Media Publikasi Tingkat
@@ -295,8 +305,8 @@
             >
             <select
               id="tingkat-kesulitan"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Tingkat Kesulitan dan Manfaatnya Materi
@@ -318,9 +328,9 @@
             <textarea
               name="uraian"
               id="uraian"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Uraian Singkat Materi yang Dipublikasikan"
-              disabled rows="5"
+               rows="5"
             ></textarea>
           </div>
         </div>
@@ -812,6 +822,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/publikasi/karya-tulis"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/publikasi/karya-tulis"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

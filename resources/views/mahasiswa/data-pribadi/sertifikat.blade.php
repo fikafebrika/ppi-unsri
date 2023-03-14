@@ -173,6 +173,7 @@
             <th>Penyelenggara</th>
             <th>Lokasi</th>
             <th>Negara</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -188,6 +189,10 @@
             <td>Palembang</td>
             {{-- I.6 Kolom E --}}
             <td>Indonesia</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -224,6 +229,10 @@
             <td>Palembang</td>
             {{-- I.6 Kolom E --}}
             <td>Indonesia</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

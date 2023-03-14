@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
             {{-- V.4 KOLOM B --}}
             <div class="mb-3 col-md-6">
                 <label for="bulan-tahun" class="form-label"
@@ -210,12 +220,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="bulan-tahun"
                   name="bulan-tahun"
                   placeholder="Bulan - Tahun"
                   value=""
-                  disabled
+
                 />
               </div>
           {{-- V.4 KOLOM C --}}
@@ -224,13 +234,13 @@
               >Judul/ Nama Karya Temuan/ Inovasi/ Paten dan Implementasi Teknologi Terbaru</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="judul"
               name="judul"
               placeholder="Judul/ Nama Krya Temuan/ Inovasi/ Paten dan Implementasi Teknologi Baru"
               value="Karya Temuan Pertama"
-              disabled
+
             />
           </div>
           {{-- V.4 KOLOM D --}}
@@ -242,9 +252,9 @@
             <textarea
               name="uraian"
               id="uraian"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Uraian Singkat Karya Temuan/ Inovasi/ Paten dan Implementasi Teknologi Baru" rows="5"
-              disabled
+
             ></textarea>
           </div>
           {{-- V.4 KOLOM E --}}
@@ -253,13 +263,13 @@
               >Media Publikasi Karya (Kalau Ada)</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nama-media"
               name="nama-media"
               placeholder="Media Publikasi Karya (Kalau Ada)"
               value="Kompas"
-              disabled
+
             />
           </div>
           {{-- V.4 KOLOM F --}}
@@ -269,8 +279,8 @@
             >
             <select
               id="tingkatan-media"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Media Publikasi Tingkat
@@ -294,8 +304,8 @@
             >
             <select
               id="tingkat-kesulitan"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Tingkat Kesulitan dan Manfaatnya Karya
@@ -626,6 +636,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/publikasi/karya-temuan"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/publikasi/karya-temuan"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

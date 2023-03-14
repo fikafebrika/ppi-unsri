@@ -171,7 +171,7 @@
             <th>Fakultas</th>
             <th>Jurusan</th>
             <th>Kota</th>
-            <th>Negara</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -189,8 +189,10 @@
             <td>Sistem Informasi</td>
             {{-- I.2 C6 --}}
             <td>Palembang</td>
-            {{-- I.2 C7 --}}
-            <td>Indonesia</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
                 <span class="badge bg-label-warning me-1"
@@ -229,8 +231,10 @@
             <td>Sistem Informasi</td>
             {{-- I.2 D6 --}}
             <td>Palembang</td>
-            {{-- I.2 D7 --}}
-            <td>Indonesia</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -269,8 +273,10 @@
             <td>Sistem Informasi</td>
             {{-- I.2 E6 --}}
             <td>Palembang</td>
-            {{-- I.2 E7 --}}
-            <td>Indonesia</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

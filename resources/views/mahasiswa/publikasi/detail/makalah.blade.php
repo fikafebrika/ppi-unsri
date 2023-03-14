@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
             {{-- V.2 KOLOM B --}}
             <div class="mb-3 col-md-6">
                 <label for="bulan-tahun" class="form-label"
@@ -210,12 +220,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="bulan-tahun"
                   name="bulan-tahun"
                   placeholder="Bulan - Tahun"
                   value=""
-                  disabled
+
                 />
               </div>
           {{-- V.2 KOLOM C --}}
@@ -224,13 +234,13 @@
               >Judul Makalah/ Tulisan</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="judul"
               name="judul"
               placeholder="Judul Makalah/ Tulisan"
               value="Makalah Satu"
-              disabled
+
             />
           </div>
           {{-- V.2 KOLOM D --}}
@@ -239,13 +249,13 @@
               >Nama Seminar/ Lokakarya</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="nama-seminar"
               name="nama-seminar"
               placeholder="Nama Seminar/ Lokakarya"
               value="Seminar Satu"
-              disabled
+
             />
           </div>
           {{-- V.2 KOLOM E --}}
@@ -254,13 +264,13 @@
               >Penyelenggara</label
             >
             <input
-              class="form-control bg-white"
+              class="form-control"
               type="text"
               id="penyelenggara"
               name="penyelenggara"
               placeholder="Penyelenggara"
               value="Universitas Sriwijaya"
-              disabled
+
             />
           </div>
           {{-- V.2 KOLOM F --}}
@@ -270,12 +280,12 @@
             >
             <input
               type="text"
-              class="form-control bg-white"
+              class="form-control"
               id="lokasi"
               name="lokasi"
               placeholder="Lokasi"
               value="Palembang"
-              disabled
+
             />
           </div>
           {{-- V.2 KOLOM G --}}
@@ -285,8 +295,8 @@
             >
             <select
               id="tingkatan-seminar"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Seminar/ Lokakarya Tingkat
@@ -307,8 +317,8 @@
             >
             <select
               id="tingkat-kesulitan"
-              class="select2 form-select bg-white"
-              disabled
+              class="select2 form-select"
+
             >
               <option value="">
                 Pilih Tingkat Kesulitan dan Manfaatnya Materi
@@ -330,9 +340,9 @@
             <textarea
               name="uraian"
               id="uraian"
-              class="form-control bg-white"
+              class="form-control"
               placeholder="Uraian Singkat Materi Makalah/ Tulisan"
-              disabled rows="5"
+               rows="5"
             ></textarea>
           </div>
         </div>
@@ -824,6 +834,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/publikasi/makalah"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/publikasi/makalah"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

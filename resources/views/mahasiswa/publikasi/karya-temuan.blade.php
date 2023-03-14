@@ -171,6 +171,7 @@
             <th>#</th>
             <th>Bulan-Tahun</th>
             <th>Judul/ Nama Karya Temuan/ Inovasi/ Paten dan Implementasi Teknologi Baru</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -182,6 +183,10 @@
             <td><strong>Januari - 2023</strong></td>
             {{-- V.4 KOLOM C --}}
             <td>Karya Temuan Pertama</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -214,6 +219,10 @@
             <td><strong>Januari - 2023</strong></td>
             {{-- V.4 KOLOM C --}}
             <td>Karya Temuan Pertama</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

@@ -172,6 +172,7 @@
             <th>Periode</th>
             <th>Nama Perguruan Tinggi/ Lembaga</th>
             <th>Nama Mata Ajaran & Uraian Singkat Yang Diajarkan/ Dikembangkan</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -185,6 +186,10 @@
             <td>Universitas Sriwijaya</td>
             {{-- IV KOLOM D --}}
             <td>Pemrograman Web</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -219,6 +224,10 @@
             <td>Universitas Sriwijaya</td>
             {{-- IV KOLOM D --}}
             <td>Pemrograman Web</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

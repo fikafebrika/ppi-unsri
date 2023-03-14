@@ -203,16 +203,26 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
             {{-- I.3 Kolom B --}}
             <div class="mb-3 col-md-6">
                 <label for="nama-organisasi" class="form-label">Nama Organisasi</label>
-                <input type="text" class="form-control bg-white" id="nama-organisasi" name="nama-organisasi" placeholder="Nama Organisasi" value="Universitas Sriwijaya" disabled
+                <input type="text" class="form-control" id="nama-organisasi" name="nama-organisasi" placeholder="Nama Organisasi" value="Universitas Sriwijaya"
                 />
             </div>
             {{-- I.3 Kolom C --}}
             <div class="mb-3 col-md-6">
                 <label class="form-label" for="jenis-organisasi">Jenis Organisasi</label>
-                <select id="jenis-organisasi" class="select2 form-select bg-white" disabled>
+                <select id="jenis-organisasi" class="select2 form-select">
                     <option value="">Pilih Jenis Organisasi</option>
                     <option value="pii" selected>
                         Organisasi PII
@@ -228,22 +238,22 @@
             {{-- I.3 Kolom D --}}
             <div class="mb-3 col-md-6">
                 <label for="kota" class="form-label">Kota</label>
-                <input type="text" class="form-control bg-white" id="kota" name="kota" placeholder="Kota" value="Palembang" disabled/>
+                <input type="text" class="form-control" id="kota" name="kota" placeholder="Kota" value="Palembang"/>
             </div>
             {{-- I.3 Kolom E --}}
             <div class="mb-3 col-md-6">
                 <label for="negara" class="form-label">Negara</label>
-                <input type="text" class="form-control bg-white" id="negara" name="negara" placeholder="Negara" value="Indonesia" disabled/>
+                <input type="text" class="form-control" id="negara" name="negara" placeholder="Negara" value="Indonesia"/>
             </div>
             {{-- I.3 Kolom F --}}
             <div class="mb-3 col-md-6">
                 <label for="periode" class="form-label">Periode</label>
-                <input type="text" class="form-control bg-white" id="periode" name="periode" placeholder="Periode" value="" disabled/>
+                <input type="text" class="form-control" id="periode" name="periode" placeholder="Periode" value=""/>
             </div>
             {{-- I.3 Kolom G --}}
             <div class="mb-3 col-md-6">
                 <label for="lama-anggota" class="form-label">Sudah Berapa Lama Menjadi Anggota?</label>
-                <select id="lama-anggota" class="select2 form-select bg-white" disabled>
+                <select id="lama-anggota" class="select2 form-select">
                     <option value="">Pilih Sudah Berapa Lama Menjadi Anggota?</option>
                     <option value="1-5" selected>1 - 5 Tahun</option>
                     <option value="6-10">6 - 10 Tahun</option>
@@ -254,7 +264,7 @@
             {{-- I.3 Kolom H --}}
             <div class="mb-3 col-md-6">
                 <label for="jabatan" class="form-label">Jabatan Dalam Organisasi</label>
-                <select id="jabatan" class="select2 form-select bg-white" disabled>
+                <select id="jabatan" class="select2 form-select">
                     <option value="">
                         Pilih Jabatan Dalam Organisasi
                     </option>
@@ -270,7 +280,7 @@
             {{-- I.3 Kolom I --}}
             <div class="mb-3 col-md-6">
                 <label for="tingkatan" class="form-label">Tingkatan Organisasi</label>
-                <select id="tingkatan" class="select2 form-select bg-white" disabled>
+                <select id="tingkatan" class="select2 form-select">
                     <option value="">
                         Pilih Tingkatan Organisasi
                     </option>
@@ -291,7 +301,7 @@
             {{-- I.3 Kolom J --}}
             <div class="mb-3 col-md-6">
                 <label for="lingkup" class="form-label">Lingkup Kegiatan Organisasi</label>
-                <select id="lingkup" class="select2 form-select bg-white" disabled>
+                <select id="lingkup" class="select2 form-select">
                     <option value="">
                         Pilih Lingkup Kegiatan Organisasi
                     </option>
@@ -319,7 +329,7 @@
             {{-- I.3 Kolom K --}}
             <div class="mb-3">
                 <label for="aktifitas" class="form-label">Aktifitas Dalam Organisasi</label>
-                <textarea name="aktifitas" id="aktifitas" class="form-control bg-white" placeholder="Aktifitas Dalam Organisasi" disabled rows="5"></textarea>
+                <textarea name="aktifitas" id="aktifitas" class="form-control" placeholder="Aktifitas Dalam Organisasi" rows="5"></textarea>
             </div>
         </div>
       </div>
@@ -744,6 +754,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/data-pribadi/organisasi"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/data-pribadi/organisasi"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

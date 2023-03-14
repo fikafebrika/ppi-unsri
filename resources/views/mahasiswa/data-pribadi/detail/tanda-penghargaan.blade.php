@@ -203,6 +203,16 @@
       <hr class="my-0" /> --}}
       <div class="card-body pb-3">
         <div class="row">
+            <div class="mb-3 col-md-6">
+                <label for="bukti" class="form-label"
+                  >Upload Bukti</label
+                >
+                <input
+                  class="form-control"
+                  type="file"
+                  id="bukti"
+                />
+              </div>
             {{-- I.4 Kolom B --}}
             <div class="mb-3 col-md-6">
                 <label for="tahun" class="form-label"
@@ -210,12 +220,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="tahun"
                   name="tahun"
                   placeholder="Tahun"
                   value="2022"
-                  disabled
+
                 />
             </div>
             {{-- I.4 Kolom C --}}
@@ -224,13 +234,13 @@
                   >Nama Tanda Penghargaan</label
                 >
                 <input
-                  class="form-control bg-white"
+                  class="form-control"
                   type="text"
                   id="penghargaan"
                   name="penghargaan"
                   placeholder="Nama Tanda Penghargaan"
                   value="Penghargaan Satu"
-                  disabled
+
                 />
             </div>
             {{-- I.4 Kolom D --}}
@@ -240,12 +250,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="lembaga"
                   name="lembaga"
                   placeholder="Nama Lembaga yang Memberikan"
                   value="Universitas Sriwijaya"
-                  disabled
+
                 />
             </div>
             {{-- I.4 Kolom E --}}
@@ -255,12 +265,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="lokasi"
                   name="lokasi"
                   placeholder="Lokasi"
                   value="Palembang"
-                  disabled
+
                 />
             </div>
             {{-- I.4 Kolom F --}}
@@ -270,12 +280,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control bg-white"
+                  class="form-control"
                   id="negara"
                   name="negara"
                   placeholder="Negara"
                   value="Indonesia"
-                  disabled
+
                 />
             </div>
             {{-- I.4 Kolom G --}}
@@ -285,8 +295,8 @@
                 >
                 <select
                 id="tingkat-penghargaan"
-                class="select2 form-select bg-white"
-                disabled
+                class="select2 form-select"
+
                 >
                 <option value="">
                     Pilih Penghargaan yang Diterima Tingkat
@@ -307,8 +317,8 @@
                 >
                 <select
                 id="tingkatan-lembaga"
-                class="select2 form-select bg-white"
-                disabled
+                class="select2 form-select"
+
                 >
                 <option value="">Pilih Penghargaan Diberikan Oleh Lembaga</option>
                 <option value="lokal" selected>
@@ -333,9 +343,9 @@
                 <textarea
                 name="uraian"
                 id="uraian"
-                class="form-control bg-white"
+                class="form-control"
                 placeholder="Uraian Singkat Tanda Penghargaan"
-                disabled rows="5"
+                 rows="5"
                 ></textarea>
             </div>
             {{-- <div class="mb-3 col-md-6">
@@ -772,6 +782,28 @@
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/data-pribadi/tanda-penghargaan"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/data-pribadi/tanda-penghargaan"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

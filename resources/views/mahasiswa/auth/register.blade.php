@@ -32,6 +32,18 @@
           autofocus
         />
       </div>
+      {{-- Nomor Induk Mahasiswa --}}
+      <div class="mb-3">
+        <label for="nim" class="form-label">Nomor Induk Mahasiswa</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nim"
+          name="nim"
+          placeholder="Masukkan Nomor Induk Mahasiswa"
+          autofocus
+        />
+      </div>
       {{-- No. KTA Mahasiswa (6 Digit Terakhir) --}}
       <div class="mb-3">
         <label for="no-kta" class="form-label">No. KTA (6 Digit Terakhir)</label>

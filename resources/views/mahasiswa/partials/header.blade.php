@@ -8,10 +8,11 @@
                 Selamat Datang, Bambang! 🎉
               </h5>
               <p>
-                Silakan Lengkapi Data Klaim Pencapaian Anda.<br>
-                Dengan Mengupload Excel FAIP Anda.
+                Silakan Lengkapi Data Klaim Pencapaian Anda Dengan Mengupload Excel FAIP Anda. <br>
+                Gunakan Template yang Disediakan dengan Mengunduh Template FAIP.
               </p>
-              <a href="#" class="btn btn-primary">Upload Excel</a>
+              <a href="#" class="btn btn-primary me-2">Upload Excel</a>
+              <a href="#" class="btn btn-outline-primary">Unduh Template FAIP</a>
             </div>
           </div>
           <div class="col-sm-4 text-center text-sm-left">

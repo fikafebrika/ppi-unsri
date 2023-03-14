@@ -170,6 +170,7 @@
             <th>Nama Instansi/ Perusahaan</th>
             <th>Jabatan/ Tugas</th>
             <th>Nama Aktifitas/ Kegiatan/ Proyek</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -185,6 +186,10 @@
             <td>Dosen</td>
             {{-- III KOLOM E --}}
             <td>Kegiatan Jurusan</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -221,6 +226,10 @@
             <td>Dosen</td>
             {{-- III KOLOM E --}}
             <td>Kegiatan Jurusan</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

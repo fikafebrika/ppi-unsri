@@ -211,8 +211,7 @@
               pengalaman Anda tentang Etika Profesi</label
             >
             <textarea
-              class="form-control bg-white"
-              disabled
+              class="form-control"
               placeholder="Tuliskan dengan kata-kata sendiri apa pengertian dan pendapat Anda tentang Kode Etik Insinyur serta pengalaman Anda tentang Etika Profesi"
               name="pengertian"
               id="pengertian"
@@ -645,6 +644,28 @@ Seorang insinyur harus mampu mempertanggungjawabkan ilmunya dalam kehidupannya. 
           >
         </div>
       </div> --}}
+      <div class="d-flex justify-content-between m-4 mt-0">
+        <div>
+          <a
+            href="/kode-etik-insinyur/pengertian"
+            class="btn btn-secondary"
+            >Kembali</a
+          >
+        </div>
+        <div>
+          <button
+            type="reset"
+            class="btn btn-outline-primary me-2"
+          >
+            Reset
+          </button>
+          <a
+            href="/kode-etik-insinyur/pengertian"
+            class="btn btn-primary text-white"
+            >Simpan</a
+          >
+        </div>
+      </div>
     </form>
     <!-- /Account -->
   </div>

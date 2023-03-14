@@ -172,6 +172,7 @@
             <th>Nama Seminar/ Lokakarya</th>
             <th>Nama Penyelenggara</th>
             <th>Lokasi</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -187,6 +188,10 @@
             <td>Universitas Sriwijaya</td>
             {{-- V.3 KOLOM E --}}
             <td>Palembang</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -223,6 +228,10 @@
             <td>Universitas Sriwijaya</td>
             {{-- V.3 KOLOM E --}}
             <td>Palembang</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

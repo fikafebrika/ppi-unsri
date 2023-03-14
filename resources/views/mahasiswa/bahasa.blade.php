@@ -169,7 +169,7 @@
             <th>Nama Bahasa</th>
             <th>Jenis Bahasa</th>
             <th>Kemampuan Verbal Aktif/ Pasif</th>
-            <th>Jenis Tulisan Yang Mampu Disusun</th>
+            <th>Bukti</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
@@ -183,8 +183,10 @@
             <td>Bahasa Nasional</td>
             {{-- VI KOLOM D --}}
             <td>Pasif, Tertulis</td>
-            {{-- VI KOLOM E --}}
-            <td>Makalah</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"
@@ -219,8 +221,10 @@
             <td>Bahasa Nasional</td>
             {{-- VI KOLOM D --}}
             <td>Pasif, Tertulis</td>
-            {{-- VI KOLOM E --}}
-            <td>Makalah</td>
+            {{-- Kalo Belum Upload Bukti, status buktinyo jadi "Belum Ada" --}}
+            <td>Belum Ada</td>
+            {{-- Kalo Sudah Upload Bukti, status buktinyo jadi "Ada" --}}
+            {{-- <td>Ada</td> --}}
             {{-- Status Data FAIP, Kalo dah upload excel, statusnyo masih "Pending" --}}
             <td>
               <span class="badge bg-label-warning me-1"

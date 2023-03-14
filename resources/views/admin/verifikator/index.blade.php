@@ -64,7 +64,7 @@
                         <a
                           href="/admin/verifikator/edit"
                           class="btn btn-sm btn-primary"
-                          >Edit</a
+                          >Detail</a
                         >
                       </td>
                     </tr>
@@ -77,7 +77,7 @@
                         <a
                           href="/admin/verifikator/edit"
                           class="btn btn-sm btn-primary"
-                          >Edit</a
+                          >Detail</a
                         >
                       </td>
                     </tr>

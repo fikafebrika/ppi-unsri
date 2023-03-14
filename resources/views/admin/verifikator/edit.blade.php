@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('pageHeading')
-  {{ __('Daftar Verifikator') }}
+  {{ __('Edit Verifikator') }}
 @endsection
 
 @section('sidebar')
@@ -30,97 +30,99 @@
     <div class="row">
       <div class="order-3 order-md-2">
         <div class="col-12">
-          <div class="card" id="daftarMahasiswa">
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
-              <h5 class="card-header">Daftar Verifikator</h5>
-              <div class="px-4 pb-2 pb-lg-0">
-                <a
-                  href="/admin/verifikator/tambah"
-                  class="btn btn-outline-primary"
-                  >Tambah</a
+            <div class="card">
+                <form
+                  id="formAccountSettings"
+                  method="POST"
+                  onsubmit="return false"
                 >
-              </div>
-            </div>
-            <div class="table-responsive mx-3 mb-2 text-center">
-                <table class="table table-hover">
-                  <thead class="align-middle">
-                    <tr>
-                      <th>#</th>
-                      <th>Nama Lengkap (Dengan Jabatan)</th>
-                      <th>Nomor Induk Pegawai</th>
-                      <th>Email</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Nama Lengkap Verifikator Satu</td>
-                      <td>1234567890</td>
-                      <td>verifikatorsatu@gmail.com</td>
-                        <td>
-                        <a
-                          href="/admin/verifikator/edit"
-                          class="btn btn-sm btn-primary"
-                          >Edit</a
+                  <h5 class="card-header">Edit Verifikator</h5>
+                  <div class="card-body pb-3">
+                    <div class="row">
+                      <div class="mb-3 col-md-6">
+                        <label
+                          for="nama-lengkap"
+                          class="form-label"
+                          >Nama Lengkap</label
                         >
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Nama Lengkap Verifikator Satu</td>
-                      <td>1234567890</td>
-                      <td>verifikatorsatu@gmail.com</td>
-                        <td>
-                        <a
-                          href="/admin/verifikator/edit"
-                          class="btn btn-sm btn-primary"
-                          >Edit</a
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nama-lengkap"
+                          name="nama-lengkap"
+                          placeholder="Nama Lengkap" value="Verifikator Satu"
+                        />
+                      </div>
+                      <div class="mb-3 col-md-6">
+                        <label
+                          for="nip"
+                          class="form-label"
+                          >Nomor Induk Pegawai</label
                         >
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="d-flex justify-content-between mt-3 mx-1">
-                  <div><small>Showing 1 to 2 of 2 entries</small></div>
-                  <div>
-                    <nav aria-label="Page navigation">
-                      <ul class="pagination pagination-sm">
-                        <li class="page-item prev">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevron-left"></i
-                          ></a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="javascript:void(0);"
-                            >1</a
-                          >
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);"
-                            >2</a
-                          >
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);"
-                            >3</a
-                          >
-                        </li>
-                        <li class="page-item next">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevron-right"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </nav>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nip"
+                          name="nip"
+                          placeholder="Nomor Induk Pegawai" value="1234567890"
+                        />
+                      </div>
+                      <div class="mb-3 col-md-6">
+                        <label
+                          for="email"
+                          class="form-label"
+                          >Email</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Email" value="verifikatorsatu@gmail.com"
+                        />
+                      </div>
+                      <div class="mb-3 col-md-6">
+                        <label
+                          for="password"
+                          class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="password"
+                          name="password"
+                          placeholder="Password" value="pass123"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="d-flex justify-content-between m-4 mt-0">
+                    <div>
+                      <a
+                        href="/admin/verifikator"
+                        class="btn btn-secondary"
+                        >Kembali</a
+                      >
+                    </div>
+                    <div>
+                      <button
+                        type="reset"
+                        class="btn btn-outline-primary me-2"
+                      >
+                        Reset
+                      </button>
+                      <a
+                        href="/admin/verifikator"
+                        class="btn btn-primary text-white"
+                        >Simpan</a
+                      >
+                    </div>
+                  </div>
+                </form>
+                <!-- /Account -->
               </div>
             </div>
-          </div>
-        </div>
       </div>
     </div>
 </div>

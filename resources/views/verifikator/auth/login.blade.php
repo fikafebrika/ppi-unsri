@@ -63,12 +63,12 @@
       </button>
     </form>
 
-    <p class="text-center">
+    {{-- <p class="text-center">
         <span>Belum Punya Akun?</span>
         <a href="/verifikator/register">
           <span>Silakan Register</span>
         </a>
-      </p>
+      </p> --}}
 
 </div>
 @endsection

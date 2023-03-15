@@ -44,9 +44,9 @@ Route::prefix('/verifikator')->group(function () {
         return view('verifikator.auth.login');
     });
 
-    Route::get('/register', function () {
-        return view('verifikator.auth.register');
-    });
+    // Route::get('/register', function () {
+    //     return view('verifikator.auth.register');
+    // });
 
     Route::get('/beranda', function () {
         return view('verifikator.index');
